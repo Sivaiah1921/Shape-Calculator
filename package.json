@@ -1,0 +1,34 @@
+{
+  "name": "Shape-Calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shankarsivaReddy/Shape-Calculator.git"
+  },
+  "keywords": [
+    "Calculator"
+  ],
+  "author": "siva <shankarreddy2025@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shankarsivaReddy/Shape-Calculator/issues"
+  },
+  "homepage": "https://github.com/shankarsivaReddy/Shape-Calculator#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.2.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^5.10.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
