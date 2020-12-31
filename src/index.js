@@ -1,6 +1,6 @@
 let selectedShape;
 
-const  setRadioValue =()=> {
+const setRadioValue =()=> {
     let selectedShape = document.getElementsByName('area');
     for (i = 0; i < selectedShape.length; i++) {
         if (selectedShape[i].checked) {
@@ -13,9 +13,8 @@ const  setRadioValue =()=> {
 }
 
 //calculate the All areas to this factory Method
-var shapeFactory = function (...args){
-    // console.log(args)
-        var shape = {}
+const shapeFactory = (...args) => {
+        const shape = {}
         shape.length = args[0];
         shape.width = args[1];
         shape.diameter = args[0];
@@ -38,7 +37,7 @@ var shapeFactory = function (...args){
  return shape
 }
 // render the Rectangle function
- function renderRec(){
+ const renderRec = () => {
     let height = document.getElementById('rect-value-1').value;
     let width = document.getElementById('rect-value-2').value;
     let areaOfRec = shapeFactory(height, width)
@@ -50,7 +49,7 @@ var shapeFactory = function (...args){
     document.getElementById("result-heading").innerHTML = `The area is ${value}`
 }
 // render the Cilrcle  function
-function rederCircle(){
+const rederCircle = () => {
     let diameter = document.getElementById('circle-value').value;
     let areaOfCircle = shapeFactory(diameter)
     let areaResult = areaOfCircle.printCircleArea()
@@ -61,7 +60,7 @@ function rederCircle(){
     document.getElementById("result-heading").innerHTML = `The area is ${areaResult}`;
 }
 // render the Square  function
-function renderSquare(){
+const renderSquare = () => {
     let side = document.getElementById('square-value').value;
     let areaOfSquare = shapeFactory(side)
     let areaResult = areaOfSquare.printsquareArea()
@@ -71,7 +70,7 @@ function renderSquare(){
     document.getElementById("result-heading").innerHTML = `The area is ${areaResult}`;
 }
 // render the Ellipse  function
-function renderEllipse() {
+const renderEllipse = () => {
     let aAxis = document.getElementById('ellipse-value-1').value;
     let bAxis = document.getElementById('ellipse-value-2').value;
     let areaOfEllipse =shapeFactory(aAxis, bAxis)
@@ -84,7 +83,7 @@ function renderEllipse() {
 }
 
 //calculator logics.
-function onApplyValue() {
+const onApplyValue = () => {
     switch (this.selectedShape) {
         case "rectangle": renderRec()
         break;
@@ -98,7 +97,7 @@ function onApplyValue() {
     }
 }
 // clear function 
-function onClear() {
+const onClear = () => {
     let selectedShape = document.getElementsByName('area');
     for (let i = 0; i < selectedShape.length; i++) {
         document.getElementById(`${selectedShape[i].value}-form`).style.display = "none";
