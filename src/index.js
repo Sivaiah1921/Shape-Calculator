@@ -1,7 +1,7 @@
 let selectedShape;
 
 const setRadioValue =()=> {
-    let selectedShape = document.getElementsByName('area');
+     selectedShape = document.getElementsByName('area');
     for (i = 0; i < selectedShape.length; i++) {
         if (selectedShape[i].checked) {
             document.getElementById("step-1").style.display = "none";
