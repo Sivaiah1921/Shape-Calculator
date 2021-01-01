@@ -1,89 +1,87 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 .headerWrapper {
-  display: flex;
-  justify-content: center;
-  font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding:20px auto ;
-  border: 1px solid black;
-  background-image: url("https://thumbs.dreamstime.com/b/scratched-calculator-framed-rounded-rectangle-stamp-calculator-stamp-seal-print-grunge-style-seal-shape-rounded-135337691.jpg");
-  /* object-fit: cover; */
-  background-repeat: no-repeat;
-  background-size: 300px 100px;
-
+	display: flex;
+	justify-content: center;
+	font-size: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 20px auto;
+	border: 1px solid black;
+	background-image: url("https://thumbs.dreamstime.com/b/scratched-calculator-framed-rounded-rectangle-stamp-calculator-stamp-seal-print-grunge-style-seal-shape-rounded-135337691.jpg");
+	/* object-fit: cover; */
+	background-repeat: no-repeat;
+	background-size: 300px 100px;
 }
 button {
-  padding: 5px;
-  box-shadow:0px 5px 11px 0px rgba(50, 50, 50, 0.99);
+	padding: 5px;
+	box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.99);
 }
 .flexDirection {
-  flex-direction: row;
-  display: flex;
-  justify-content:space-between;
-  padding: 24px;
+	flex-direction: row;
+	display: flex;
+	justify-content: space-between;
+	padding: 24px;
 }
 
 .bodyWrapper {
-  margin: auto;
+	margin: auto;
 }
 .textWrapper {
-  width: 40%;
-  height: auto;
+	width: 40%;
+	height: auto;
 }
 .calculatorWrapper {
-  width: 35%;
-  border: 1px solid grey;
-  border-radius: 1.2rem;
-  height: auto;
-  padding: 24px;
- 
+	width: 35%;
+	border: 1px solid grey;
+	border-radius: 1.2rem;
+	height: auto;
+	padding: 24px;
 }
 .content-info {
-  height: 300px;
-  width: 44%;
-  margin-right: 3rem;
+	height: 300px;
+	width: 44%;
+	margin-right: 3rem;
 }
 .content-h2 {
-  padding: 1rem;
+	padding: 1rem;
 }
 .content-h3 {
-  padding-left: 1rem;
+	padding-left: 1rem;
 }
 
 .content-p {
-  padding: 1rem;
+	padding: 1rem;
 }
 .step-header {
-  font-weight: bold;
-  padding-left: 4px;
-  font-size: 1.2rem;
-  padding-bottom: 1rem;
+	font-weight: bold;
+	padding-left: 4px;
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
 }
 .step-subheader {
-  padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 .result-head {
-  padding: 3rem 0;
+	padding: 3rem 0;
 }
 .viewWrapper {
-  display: flex;
-  flex-basis: 10%;
-  height: 300px;
-  background-color: lightgrey;
-  border: 1px solid grey;
-  justify-content: center;
-  font-size: 12px;
-  align-items: center;
-  align-self: center;
-  margin-left: 0.2rem;
-  
-  flex-direction: column;
+	display: flex;
+	flex-basis: 10%;
+	height: 300px;
+	background-color: lightgrey;
+	border: 1px solid grey;
+	justify-content: center;
+	font-size: 12px;
+	align-items: center;
+	align-self: center;
+	margin-left: 0.2rem;
+
+	flex-direction: column;
 }
 .marginTop {
-  margin-top: 20px;
+	margin-top: 20px;
 }

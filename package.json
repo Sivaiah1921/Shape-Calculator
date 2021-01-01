@@ -1,5 +1,5 @@
 {
-  "name": "Shape-Calculator",
+  "name": "Shape~Calculator-1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -28,6 +28,8 @@
     "babel-loader": "^8.2.2",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "eslint": "7.16.0",
+    "prettier": "2.2.1",
     "webpack": "^5.10.0",
     "webpack-dev-server": "^3.11.0"
   }
