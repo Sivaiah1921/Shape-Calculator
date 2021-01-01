@@ -6,13 +6,14 @@ let selectedShape;
 const setRadioValue = () => {
 	selectedShape = document.getElementsByName("area");
 
-	for (i = 0; i < selectedShape.length; i++) {
-		if (selectedShape[i].checked) {
+	for (let [key] of Object.entries(selectedShape)) {
+		if (selectedShape[key].checked) {
 			document.getElementById("step-1").style.display = "none";
 			document.getElementById("step-2").style.display = "block";
-			document.getElementById(`${selectedShape[i].value}-form`).style.display =
-				"block";
-			this.selectedShape = selectedShape[i].value;
+			document.getElementById(
+				`${selectedShape[key].value}-form`
+			).style.display = "block";
+			this.selectedShape = selectedShape[key].value;
 		}
 	}
 };
@@ -130,10 +131,10 @@ const onApplyValue = () => {
  */
 const onClear = () => {
 	let selectedShape = document.getElementsByName("area");
-	for (let i = 0; i < selectedShape.length; i++) {
-		document.getElementById(`${selectedShape[i].value}-form`).style.display =
+	for (let [key] of Object.entries(selectedShape)) {
+		document.getElementById(`${selectedShape[key].value}-form`).style.display =
 			"none";
-		selectedShape[i].checked = false;
+		selectedShape[key].checked = false;
 	}
 	document.getElementById("step-1").style.display = "block";
 	document.getElementById("step-2").style.display = "none";
