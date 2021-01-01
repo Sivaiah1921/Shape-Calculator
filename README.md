@@ -1,6 +1,6 @@
 # Shape-Calculator
 
 ##Screenshots :
-![Screenshot](Capture1.PNG)
-![Screenshot](Capture2.PNG)
-![Screenshot](Capture3.PNG)
+![Screenshot](./public/Images/Capture1.PNG)
+![Screenshot](./public/Images/Capture2.PNG)
+![Screenshot](./public/Images/Capture3.PNG)
